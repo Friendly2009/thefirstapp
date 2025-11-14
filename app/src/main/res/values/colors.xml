@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="back">#1E1E1E</color>
+    <color name="text">#E1E1E1</color>
+    <color name="SecondText">A0A0A0</color>
+    <color name="Accent">#4B9DFF</color>
 </resources>
