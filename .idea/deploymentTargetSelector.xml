@@ -26,6 +26,9 @@
           </targets>
         </DialogSelection>
       </SelectionState>
+      <SelectionState runConfigName="DB_Activity">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
     </selectionStates>
   </component>
 </project>

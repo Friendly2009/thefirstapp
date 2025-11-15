@@ -1,5 +1,6 @@
 package com.example.thefirstapp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -9,23 +10,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class DB_Activity : AppCompatActivity(){
+    @SuppressLint("MissingSuperCall")
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.adminpanel);
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val Admin = findViewById<Button>(R.id.Default);
-        val InputAdmin = findViewById<EditText>(R.id.editText)
-        Admin.setOnClickListener {
-            if(InputAdmin.text.toString() == "19614141"){
-                setContentView(R.layout.adminpanel);
-            }
-        }
-
+        val button = findViewById<Button>(R.id.ReturnBack);
     }
 }
